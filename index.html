@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- <style>
+            body {
+                font-family: "Roboto", sans-serif;
+            }
+        </style> -->
+        <title>YouTube Clone</title>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            black: {
+                                21: "#212121",
+                                18: "#181818",
+                                38: "#383838",
+                                32: "#323232",
+                            },
+                            gray: {
+                                a: "#aaa",
+                            },
+                            yBlue: "#3DA6FF",
+                        },
+                        fontFamily: {
+                            roboto: ["Roboto", "sans-serif"],
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="font-roboto overflow-hidden">
+        <main class="flex h-screen text-white">
+            <aside class="w-[220px] bg-black-21">
+                <div
+                    class="pt-[16px] px-[20px] pb-[28px] flex items-center gap-[16px]"
+                >
+                    <button
+                        class="text-[20px] inline-flex items-center justify-center"
+                    >
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a href="#">
+                        <img
+                            class="h-[20px] object-contain"
+                            src="./images/logo.svg"
+                            alt="logo"
+                        />
+                    </a>
+                </div>
+
+                <div class="pr-[20px] overflow-y-auto h-screen">
+                    <div class="">
+                        <a
+                            href="#"
+                            class="px-[20px] py-[4px] flex items-center gap-x-[20px] bg-black-38"
+                        >
+                            <i
+                                class="fa fa-home text-[20px] size-[24px] inline-flex items-center justify-center"
+                            ></i>
+                            <span class="text-[14px] font-medium">Home</span>
+                        </a>
+                        <a
+                            href="#"
+                            class="px-[20px] py-[4px] flex items-center gap-x-[20px]"
+                        >
+                            <i
+                                class="fa fa-home text-[20px] size-[24px] inline-flex items-center justify-center"
+                            ></i>
+                            <span class="text-[14px] font-medium"
+                                >Explores</span
+                            >
+                        </a>
+                        <a
+                            href="#"
+                            class="px-[20px] py-[4px] flex items-center gap-x-[20px]"
+                        >
+                            <i
+                                class="fa fa-home text-[20px] size-[24px] inline-flex items-center justify-center"
+                            ></i>
+                            <span class="text-[14px] font-medium">Shorts</span>
+                        </a>
+                        <a
+                            href="#"
+                            class="px-[20px] py-[4px] flex items-center gap-x-[20px]"
+                        >
+                            <i
+                                class="fa fa-home text-[20px] size-[24px] inline-flex items-center justify-center"
+                            ></i>
+                            <span class="text-[14px] font-medium"
+                                >Subscriptions</span
+                            >
+                        </a>
+                    </div>
+                    <hr class="border-black-38 my-[16px]" />
+                    <div class="">
+                        <a
+                            href="#"
+                            class="px-[20px] py-[4px] flex items-center gap-x-[20px]"
+                        >
+                            <i
+                                class="fa fa-home text-[20px] size-[24px] inline-flex items-center justify-center"
+                            ></i>
+                            <span class="text-[14px] font-medium">Library</span>
+                        </a>
+                        <a
+                            href="#"
+                            class="px-[20px] py-[4px] flex items-center gap-x-[20px]"
+                        >
+                            <i
+                                class="fa fa-home text-[20px] size-[24px] inline-flex items-center justify-center"
+                            ></i>
+                            <span class="text-[14px] font-medium">History</span>
+                        </a>
+                        <a
+                            href="#"
+                            class="px-[20px] py-[4px] flex items-center gap-x-[20px]"
+                        >
+                            <i
+                                class="fa fa-home text-[20px] size-[24px] inline-flex items-center justify-center"
+                            ></i>
+                            <span class="text-[14px] font-medium"
+                                >Your videos</span
+                            >
+                        </a>
+                        <a
+                            href="#"
+                            class="px-[20px] py-[4px] flex items-center gap-x-[20px]"
+                        >
+                            <i
+                                class="fa fa-home text-[20px] size-[24px] inline-flex items-center justify-center"
+                            ></i>
+                            <span class="text-[14px] font-medium"
+                                >Watch later</span
+                            >
+                        </a>
+                        <a
+                            href="#"
+                            class="px-[20px] py-[4px] flex items-center gap-x-[20px]"
+                        >
+                            <i
+                                class="fa fa-home text-[20px] size-[24px] inline-flex items-center justify-center"
+                            ></i>
+                            <span class="text-[14px] font-medium"
+                                >Liked videos</span
+                            >
+                        </a>
+                        <a
+                            href="#"
+                            class="px-[20px] py-[4px] flex items-center gap-x-[20px]"
+                        >
+                            <i
+                                class="fa fa-home text-[20px] size-[24px] inline-flex items-center justify-center"
+                            ></i>
+                            <span class="text-[14px] font-medium"
+                                >Show more</span
+                            >
+                        </a>
+                    </div>
+
+                    <hr class="border-black-38 my-[16px]" />
+
+                    <div class="pl-[20px]">
+                        <h4 class="text-gray-a uppercase font-semibold">
+                            Subscriptions
+                        </h4>
+                        <div class="pt-[8px] space-y-[5px]">
+                            <a
+                                href="#"
+                                class="py-[5px] flex items-center justify-between text-[12px]"
+                            >
+                                <div class="inline-flex items-center">
+                                    <img
+                                        class="mr-[20px] size-[22px] object-cover rounded-full shrink-0"
+                                        src="./images/photo.avif"
+                                        alt=""
+                                    />
+                                    <span class="line-clamp-1"
+                                        >Nadir On The Go</span
+                                    >
+                                </div>
+                                <span
+                                    class="size-[4px] inlene-flex items-center justify-center bg-yBlue rounded-full flex-shrink-0"
+                                ></span>
+                            </a>
+                            <a
+                                href="#"
+                                class="py-[5px] flex items-center justify-between text-[12px]"
+                            >
+                                <div class="inline-flex items-center">
+                                    <img
+                                        class="mr-[20px] size-[22px] object-cover rounded-full shrink-0"
+                                        src="./images/photo.avif"
+                                        alt=""
+                                    />
+                                    <span class="line-clamp-1"
+                                        >Nadir On The Go Nadir On The Go</span
+                                    >
+                                </div>
+                                <span
+                                    class="size-[4px] inlene-flex items-center justify-center bg-yBlue rounded-full flex-shrink-0"
+                                ></span>
+                            </a>
+                            <a
+                                href="#"
+                                class="py-[5px] flex items-center justify-between text-[12px]"
+                            >
+                                <div class="inline-flex items-center">
+                                    <img
+                                        class="mr-[20px] size-[22px] object-cover rounded-full shrink-0"
+                                        src="./images/photo.avif"
+                                        alt=""
+                                    />
+                                    <span class="line-clamp-1"
+                                        >Nadir On The Go</span
+                                    >
+                                </div>
+                                <!-- <span
+                                    class="size-[4px] inlene-flex items-center justify-center bg-yBlue rounded-full flex-shrink-0"
+                                ></span> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="flex-1 bg-black-18 pl-[10px]">
+                <div class="flex items-center border-b border-black-32">
+                    <div class="flex-1 flex items-center justify-center">
+                        <div class="w-[524px] flex items-center my-[7px]">
+                            <input
+                                placeholder="Search"
+                                class="w-full px-[6px] py-[10px] bg-transparent outline-none border border-black-32 rounded-tl-[3px] rounded-bl-[3px]"
+                                type="text"
+                            />
+                            <i
+                                class="fa fa-search bg-black-32 h-[45.6px] border border-black-32 rounded-tr-[3px] rounded-br-[3px] w-[56px] inline-flex items-center justify-center"
+                            ></i>
+                        </div>
+                        <button class="ml-[8px] size-[36px]">
+                            <i class="fa fa-microphone"></i>
+                        </button>
+                    </div>
+
+                    <div class="flex items-center gap-x-[10px] pr-[32px]">
+                        <button
+                            class="size-[24px] inline-flex items-center justify-center"
+                        >
+                            <i class="fa fa-video"></i>
+                        </button>
+                        <button
+                            class="size-[24px] inline-flex items-center justify-center"
+                        >
+                        <i class="fa-brands fa-buromobelexperte"></i>
+                        </button>
+                        <button
+                            class="size-[24px] inline-flex items-center justify-center"
+                        >
+                            <i class="fa fa-bell"></i>
+                        </button>
+                        <div class="relative group">
+                            <img
+                                class="size-[28px] object-cover rounded-full"
+                                src="./images/photo.avif"
+                                alt=""
+                            />
+                            <div class="absolute group-hover:opacity-100 group-hover:visible p-[10px] text-black-21 opacity-0 invisible top-full right-0 min-w-[250px] bg-[white]">
+                                <a href="#">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div></div>
+            </div>
+        </main>
+    </body>
+</html>
